@@ -1,7 +1,7 @@
 {
   "name": "danjbarry-portfolio",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.17.1"
+    "@iconify-json/mdi": "^1.2.3",
+    "astro": "^5.17.1",
+    "astro-icon": "^1.1.5"
   }
 }
