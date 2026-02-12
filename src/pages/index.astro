@@ -1,22 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import portrait from "../assets/received_2828778390802559.jpeg";
 ---
 
 <Layout
     title="Dan Barry - Software Engineer"
     description="Software Engineer specializing in backend systems and IAM"
 >
+    <Image src={portrait} alt="A bird sitting on a nest of eggs." width="250" />
     <h1>About</h1>
 
     <p>
-        I'm a software engineer based in Metuchen, New Jersey, with a passion
-        for building secure, scalable systems. I grew up in Buffalo, New York,
-        where my interest in software engineering started after taking a Java
-        class in high school. I graduated from Stevens Institute of Technology
-        with a B.S. in Computer Science and have spent the past five years
-        working on backend systems, most recently in the world of Identity and
-        Access Management.
+        I'm a software engineer based in Central New Jersey, with a passion for
+        building secure, scalable systems. I grew up in Buffalo, New York, where
+        my interest in software engineering started after taking a Java class in
+        high school. I graduated from Stevens Institute of Technology with a
+        B.S. in Computer Science and have spent the past five years working on
+        backend systems, most recently in the world of Identity and Access
+        Management.
     </p>
 
     <h2>What I Do</h2>
@@ -36,6 +39,115 @@ import { Icon } from "astro-icon/components";
         always looking for ways to improve performance and developer experience.
     </p>
 
+    <h2>Projects</h2>
+
+    <p>
+        Outside of my professional work, I've dabbled in several languages, such
+        as Rust and Go, by working on side projects. Occasionally, these
+        projects make it past the idea stage and land on my
+        <a
+            href="https://github.com/DanJBarry"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub
+        </a>
+    </p>
+
+    <div>
+        <div class="project-card">
+            <h3>
+                <Icon name="mdi:github" class="inline-icon" />
+                <a
+                    href="https://github.com/DanJBarry/df-sync"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    df-sync
+                </a>
+            </h3>
+            <p class="project-meta">
+                <Icon name="mdi:language-python" class="inline-icon" />
+                Python
+            </p>
+            <p>
+                A utility to sync Dwarf Fortress saves to the cloud.
+                Automatically backs up your game saves to cloud storage,
+                allowing for a more seamless cross-platform experience. Built
+                with Python to handle file monitoring and cloud synchronization.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>
+                <Icon name="mdi:github" class="inline-icon" />
+                <a
+                    href="https://github.com/DanJBarry/spotify-library-cleaner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    spotify-library-cleaner
+                </a>
+            </h3>
+            <p class="project-meta">
+                <Icon name="mdi:language-typescript" class="inline-icon" />
+                TypeScript
+            </p>
+            <p>
+                A script to remove outdated metadata from your Spotify library.
+                Cleans up duplicate tracks, removes unavailable songs, and
+                organizes playlists. Uses the Spotify Web API and TypeScript for
+                type-safe operations.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>
+                <Icon name="mdi:github" class="inline-icon" />
+                <a
+                    href="https://github.com/DanJBarry/sm-dedupe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    sm-dedupe
+                </a>
+            </h3>
+            <p class="project-meta">
+                <Icon name="mdi:lambda" class="inline-icon" />
+                Haskell
+            </p>
+            <p>
+                A tool to remove duplicates from your Stepmania songs folder.
+                Analyzes song files, detects duplicates based on metadata and
+                hash comparison, and safely removes redundant files. Written in
+                Haskell for functional programming practice.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>
+                <Icon name="mdi:github" class="inline-icon" />
+                <a
+                    href="https://github.com/DanJBarry/DeciBel-Cogs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    DeciBel-Cogs
+                </a>
+            </h3>
+            <p class="project-meta">
+                <Icon name="mdi:language-python" class="inline-icon" />
+                Python
+            </p>
+            <p>
+                Cogs for Attila, the Stevens Melee Discord bot. Custom Discord
+                bot extensions for the Stevens Institute of Technology Super
+                Smash Bros. Melee community. Features tournament management,
+                player rankings, and match reporting.
+            </p>
+        </div>
+    </div>
+
     <h2>Beyond Code</h2>
 
     <p>
@@ -53,115 +165,6 @@ import { Icon } from "astro-icon/components";
     <p>
         These days, I channel my competitive energy into volleyball. I actively
         compete in indoor, sand doubles, and grass doubles tournaments and
-        leagues throughout New Jersey. The sport keeps me balanced and reminds
-        me that teamwork and communication are just as important on the court as
-        they are in collaborative software development.
+        leagues throughout New Jersey.
     </p>
-
-    <h2>Projects</h2>
-
-    <p>
-        Outside of my professional work, I've dabbled in several languages, such
-        as Rust and Go, by working on side projects. Occasionally, these
-        projects make it past the idea stage and land on my
-        <a
-            href="https://github.com/DanJBarry"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            GitHub
-        </a>
-    </p>
-
-    <div class="project-card">
-        <h3>
-            <Icon name="mdi:github" class="inline-icon" />
-            <a
-                href="https://github.com/DanJBarry/df-sync"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                df-sync
-            </a>
-        </h3>
-        <p class="project-meta">
-            <Icon name="mdi:language-python" class="inline-icon" />
-            Python
-        </p>
-        <p>
-            A utility to sync Dwarf Fortress saves to the cloud. Automatically
-            backs up your game saves to cloud storage, allowing for a more
-            seamless cross-platform experience. Built with Python to handle file
-            monitoring and cloud synchronization.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h3>
-            <Icon name="mdi:github" class="inline-icon" />
-            <a
-                href="https://github.com/DanJBarry/spotify-library-cleaner"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                spotify-library-cleaner
-            </a>
-        </h3>
-        <p class="project-meta">
-            <Icon name="mdi:language-typescript" class="inline-icon" />
-            TypeScript
-        </p>
-        <p>
-            A script to remove outdated metadata from your Spotify library.
-            Cleans up duplicate tracks, removes unavailable songs, and organizes
-            playlists. Uses the Spotify Web API and TypeScript for type-safe
-            operations.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h3>
-            <Icon name="mdi:github" class="inline-icon" />
-            <a
-                href="https://github.com/DanJBarry/sm-dedupe"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                sm-dedupe
-            </a>
-        </h3>
-        <p class="project-meta">
-            <Icon name="mdi:lambda" class="inline-icon" />
-            Haskell
-        </p>
-        <p>
-            A tool to remove duplicates from your Stepmania songs folder.
-            Analyzes song files, detects duplicates based on metadata and hash
-            comparison, and safely removes redundant files. Written in Haskell
-            for functional programming practice.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h3>
-            <Icon name="mdi:github" class="inline-icon" />
-            <a
-                href="https://github.com/DanJBarry/DeciBel-Cogs"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                DeciBel-Cogs
-            </a>
-        </h3>
-        <p class="project-meta">
-            <Icon name="mdi:language-python" class="inline-icon" />
-            Python
-        </p>
-        <p>
-            Cogs for Attila, the Stevens Melee Discord bot. Custom Discord bot
-            extensions for the Stevens Institute of Technology Super Smash Bros.
-            Melee community. Features tournament management, player rankings,
-            and match reporting.
-        </p>
-    </div>
 </Layout>
