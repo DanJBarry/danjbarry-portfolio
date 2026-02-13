@@ -1,4 +1,6 @@
 ---
+import "@fontsource-variable/inter";
+import "@fontsource/inter";
 import { Image } from "astro:assets";
 import icon from "../assets/received_30324269680550126.jpeg";
 
@@ -20,8 +22,8 @@ const {
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="preconnect" href="https://rsms.me/" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <!-- <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" /> -->
         <title>{title}</title>
     </head>
     <body>
@@ -44,27 +46,27 @@ const {
 
 <style is:global>
     :root {
-        --text: #333;
-        --bg: #fff;
-        --accent: #0066cc;
-        --gray: #666;
-        --border: #ddd;
+        --text: #e0e0e0;
+        --bg: #1a1a1a;
+        --accent: #4d9fff;
+        --gray: #aaa;
+        --border: #444;
     }
 
-    @media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: light) {
         :root {
-            --text: #e0e0e0;
-            --bg: #1a1a1a;
-            --accent: #4d9fff;
-            --gray: #aaa;
-            --border: #444;
+            --text: #333;
+            --bg: #fff;
+            --accent: #0066cc;
+            --gray: #666;
+            --border: #ddd;
         }
     }
 
     @supports (font-variation-settings: normal) {
         :root {
             font-family:
-                InterVariable,
+                "Inter Variable",
                 -apple-system,
                 BlinkMacSystemFont,
                 "Segoe UI",
