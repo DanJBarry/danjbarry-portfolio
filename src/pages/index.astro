@@ -2,14 +2,20 @@
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
-import portrait from "../assets/received_2828778390802559.jpeg";
+import portrait from "../assets/received_1935444527280436.jpeg";
 ---
 
 <Layout
     title="Dan Barry - Software Engineer"
     description="Software Engineer specializing in backend systems and IAM"
 >
-    <Image src={portrait} alt="A bird sitting on a nest of eggs." width="250" />
+    <Image
+        src={portrait}
+        alt="A picture of myself enjoying some Thai iced tea."
+        quality="high"
+        width="400"
+    />
+
     <h1>About</h1>
 
     <p>
@@ -42,9 +48,9 @@ import portrait from "../assets/received_2828778390802559.jpeg";
     <h2>Projects</h2>
 
     <p>
-        Outside of my professional work, I've dabbled in several languages, such
-        as Rust and Go, by working on side projects. Occasionally, these
-        projects make it past the idea stage and land on my
+        Outside of my professional work, I've dabbled in several programming
+        languages, such as Rust and Go, by working on side projects.
+        Occasionally, these projects make it past the idea stage and land on my
         <a
             href="https://github.com/DanJBarry"
             target="_blank"
@@ -157,9 +163,7 @@ import portrait from "../assets/received_2828778390802559.jpeg";
             href="https://luckystats.gg/player/68425"
             target="_blank"
             rel="noopener noreferrer">Decibel</a
-        >, maining Sheik and Zelda across 20 tournaments. The competitive
-        mindset and analytical thinking from Melee continue to influence how I
-        approach problem-solving in software engineering.
+        >, maining Sheik and Zelda from 2016 to 2024.
     </p>
 
     <p>

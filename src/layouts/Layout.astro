@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets";
+import icon from "../assets/received_30324269680550126.jpeg";
+
 interface Props {
     title: string;
     description?: string;
@@ -332,5 +335,31 @@ const {
             gap: 1rem;
             align-items: flex-start;
         }
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+        cursor: pointer;
+    }
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 130px;
+        background-color: black;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 65%;
+        margin-left: -65px;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
     }
 </style>
